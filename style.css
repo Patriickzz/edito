@@ -1026,7 +1026,7 @@ footer {
     position: relative;
     isolation: isolate;
     overflow: hidden;
-    aspect-ratio: 9 / 16;
+    aspect-ratio: var(--video-ratio, 9 / 16);
     display: grid;
     place-items: center;
     border-radius: 10px;
@@ -1119,6 +1119,15 @@ footer {
     border-radius: inherit;
     background: #080f2b;
     object-fit: cover;
+}
+
+.landing-page .portfolio-media iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: 0;
 }
 
 @media (max-width: 900px) {
